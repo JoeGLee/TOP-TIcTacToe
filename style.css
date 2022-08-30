@@ -1,0 +1,74 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #37745B;
+}
+body{
+    background-color: #E7EAEF;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr 5fr 1fr;
+}
+.title{
+    justify-self: center;
+   
+}
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    width: 600px;
+    height: 600px;
+}
+
+li{
+    list-style-type: none;
+    width: 200px;
+    height: 200px;
+    background-color: #EDC5AB;
+    border: 1px solid #8B9D77;
+    font-size: 150px;
+    text-align: center;
+}
+
+li:hover{
+    cursor: pointer;
+    background-color: #f7decd;
+}
+
+.players{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    gap: 15px;
+}
+
+.Turn{
+    color: #74ca1255;
+}
+.active{
+    color:#74ca12;
+}
+
+
+
+input{
+    width: 250px;
+    height: 40px;
+    font-size: 30px;
+    border: 2px solid;
+    border-radius: 15px;
+    justify-self: center;
+}
+.startbtn,.setName{
+    width: 150px;
+    height: 75px;
+    border: 2px solid;
+    border-radius: 10px;
+    justify-self: center;
+}
+.startbtn:hover,.setName:hover{
+    background-color: #74ca12;
+}
